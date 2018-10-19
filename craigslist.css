@@ -1,0 +1,27 @@
+div .header {
+	background-color: #08c;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+}
+
+.title {
+	color: white;
+}
+
+.inputs {
+	text-align: center;
+}
+
+.userinput {
+	text-align: center;
+}
+
+.table {
+	width: 100%
+}
+
+.body {
+	margin: 0px
+}
+
