@@ -154,7 +154,7 @@ body {
         </table>
         </div>
 
-<div class='footer' style='position:absolute;bottom:0;'>
+<div class='footer' style='position:absolute;bottom:0;with:100%;'>
 
     <?php
     include('footer.php');
