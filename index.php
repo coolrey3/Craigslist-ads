@@ -34,7 +34,7 @@
     </div>
 
     <div class='output'>
-        <?php include('craigslist.php'); ?>
+    /<?php // include('craigslist.php'); ?>
 
         <table class='table'>
             <tr>
