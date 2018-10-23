@@ -53,7 +53,7 @@ echo "<table style='border-style:solid;border-width:.5px;margin:26px;'>";
                  </tr>";
 
 
-                    echo  "<td>". current($brand) ." ". current($model)." " . current($size). " " . current($color)." (" . current($carrier) .") 90-Day Warranty!!!<br><br>" .  current($price). " <br><br>Mobile Repair Techs <br><br>
+                    echo  "<td>". current($brand) ." ". current($model)." " . current($size). " " . current($color)." (" . current($carrier) .") 90-Day Warranty!!!<br><br>" .  current($price). " <br><br>Cell Phone Repair of Gainesville <br><br>
                    <tr><td> <br><img src='https://images.craigslist.org/00G0G_34RDV4dKEpS_600x450.jpg'></a> <br><br></td></tr>
                    <tr> <td style='text-align:left'> Hey everyone, we currently have an " . current($brand). " " . current($model) . " " . current($size) . " up for sale! This " . $type . " is in " . current($condition) . " condition, it's clean for activation and is ready to be activated on " . current($carrier) .". All $type purchases from us come with a 90-day warranty so you can rest assured you'll have no problems with your new $type.<br><br> We also carry a wide range of accessories such as colored tempered glass, cases, chargers, portable battery packs etc. Please stop by and check out our growing inventory. We repair all electronic devices from phones and tablets to computers, laptops, game consoles and more!<br><br>
 
@@ -61,9 +61,9 @@ All phones and tablets include charger block and cable<br><br>
 
 Financing through PayPal credit is available for all purchases over $99, no payments and no interest for the first 6 months!<br><br>
 
-Mobile Repair Techs<br>
+Cell Phone Repair of Gainesville<br>
 4203 NW 16th BLVD. Gainesville, FL. 32605<br>
-Hours of operation: Monday-Saturday 10:00am-7:00pm, Sunday 12:00pm-5:00pm<br>
+Hours of operation: Monday-Saturday 10:00am-7:00pm<br>
 Please Call: 352-575-0438 Text: 352-448-8408
  <br><br></td> </tr>
 
