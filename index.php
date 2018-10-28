@@ -51,7 +51,7 @@
     </div>
 <div class='footer'>
 <?php
-include('footer.php');
+include('../Frontend/footer.php');
 ?>
 
     </div>
