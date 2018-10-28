@@ -1,13 +1,13 @@
 <?php
 #############footer info##########
 echo "<style> a {color:white;}</style>";
-$footer=array("<a href='http://start.mobilerepairtechs.com'>POS</a>",
-              "<a href='http://www.mobilerepairtechs.com/'>Website Front End</a>" ,
-              "<a href='http://www.mobilerepairtechs.com/MRTbovada2018' >Website Back End</a>",
-              "<a href='http://facebook.com/mobilerepairtechs'>Facebook</a>",
-              "<a href='http://task.mobilerepairtechs.com'>Tasks</a>",
-              "<a href='http://mc.mobilerepairtechs.com'>Marketing Cards</a>",
-              "<a href='http://code.raymercedes.com/clist.php'>Craigslist Ad's</a>"
+$footer=array("'http://start.mobilerepairtechs.com'>POS",
+              "'http://www.cellphonerepair.com/gainesville-fl'>Website Front End" ,
+              "'https://www.cellphonerepair.com/gainesville-fl/login/' >Website Back End",
+              "'http://facebook.com/mobilerepairtechs'>Facebook",
+              "'./tasks.php'>Tasks",
+              "'http://mc.mobilerepairtechs.com'>Marketing Cards",
+              "'http://code.raymercedes.com/clist.php'>Craigslist Ad's"
 
              );
 
@@ -28,7 +28,7 @@ echo "<div style='color:white';>";
 
 echo "| ";
 foreach($footer as $footer) {
-                                echo "<td style='text-decoration-color:white;'> $footer  | </td>";   
+                                echo "<td style='text-decoration-color:white;'> <a target='_blank' href=$footer </a> | </td>";   
                             }
 echo "</div>";
 
