@@ -150,7 +150,7 @@ Please Call: 352-575-0438 Text: 352-448-8408
     <div class='footer' style='position:relative;'>
 
 <?php
-    include('footer.php');
+    include('../Frontend/footer.php');
 
 ?>
     </div>
