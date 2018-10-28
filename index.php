@@ -7,6 +7,9 @@
             Craigslist Automater
     </title>
         <style>
+            body {
+                margin: 0px;
+            }
 
         </style>
 </head>
