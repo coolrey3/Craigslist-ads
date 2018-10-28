@@ -5,9 +5,9 @@ $footer=array("'http://start.mobilerepairtechs.com'>POS",
               "'http://www.cellphonerepair.com/gainesville-fl'>Website Front End" ,
               "'https://www.cellphonerepair.com/gainesville-fl/login/' >Website Back End",
               "'http://facebook.com/mobilerepairtechs'>Facebook",
-              "'./tasks.php'>Tasks",
-              "'http://mc.mobilerepairtechs.com'>Marketing Cards",
-              "'http://code.raymercedes.com/clist.php'>Craigslist Ad's"
+              "'http://localhost/randomize-duties/'>Tasks",
+              "'http://localhost/marketing-cards/'>Marketing Cards",
+              "'http://localhost/craigslist-ads/'>Craigslist Ad's"
 
              );
 
@@ -28,7 +28,7 @@ echo "<div style='color:white';>";
 
 echo "| ";
 foreach($footer as $footer) {
-                                echo "<td style='text-decoration-color:white;'> <a target='_blank' href=$footer </a> | </td>";   
+                                echo "<td style='text-decoration-color:white;'> <a  href=$footer </a> | </td>";   
                             }
 echo "</div>";
 
