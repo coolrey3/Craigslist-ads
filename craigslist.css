@@ -1,4 +1,4 @@
-div .header {
+.header {
 	background-color: #08c;
 	text-align: center;
 	width: 100%;
@@ -18,10 +18,9 @@ div .header {
 }
 
 .table {
-	width: 100%
+	width: 100%;
 }
 
-.body {
-	margin: 0px
+body {
+	margin: 0px;
 }
-

@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# PHP
+vendor/
+composer.lock
+*.phar
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
