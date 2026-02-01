@@ -33,12 +33,7 @@
 td {text-align:center;}
 
 body {
-	margin: 0px
-}
-
-
-	width: 100%
-    width:100%
+	margin: 0px;
 }
 
         </style>
@@ -154,11 +149,11 @@ body {
         </table>
         </div>
 
-<div class='footer' style='position:sticky;bottom:0;with:100%;'>
+<div class='footer' style='position:sticky;bottom:0;width:100%;'>
 
     <?php
-    include('../Frontend/footer.php');
-?>
+    // include('../Frontend/footer.php');
+    ?>
         </div>
 
     </body>

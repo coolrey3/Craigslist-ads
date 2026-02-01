@@ -1,19 +1,18 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="craigslist.css"> 
-    <form action='craigslist.php' method='post'> 
-
-    <title>
-            Craigslist Automater
-    </title>
-        <style>
-            body {
-                margin: 0px;
-            }
-
-        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="craigslist.css">
+    <title>Craigslist Automater</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+    </style>
 </head>
 <body>
+    <form action='craigslist.php' method='post'>
     <div class="fullpage">
 
         <div class="header">
@@ -37,7 +36,7 @@
     </div>
 
     <div class='output'>
-    /<?php // include('craigslist.php'); ?>
+    <?php // include('craigslist.php'); ?>
 
         <table class='table'>
             <tr>
@@ -52,10 +51,11 @@
         </table>
 
     </div>
-<div class='footer'>
-<?php
-include('../Frontend/footer.php');
-?>
-
+    </form>
+    <div class='footer'>
+    <?php
+    // include('../Frontend/footer.php');
+    ?>
     </div>
 </body>
+</html>

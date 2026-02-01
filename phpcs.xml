@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ruleset name="Craigslist-Ads">
+    <description>PHP CodeSniffer configuration for Craigslist Ads</description>
+
+    <!-- Scan these files -->
+    <file>.</file>
+
+    <!-- Exclude vendor and generated files -->
+    <exclude-pattern>vendor/*</exclude-pattern>
+    <exclude-pattern>.git/*</exclude-pattern>
+
+    <!-- Use PSR-12 as the base standard -->
+    <rule ref="PSR12">
+        <!-- Relax rules that would require major refactoring -->
+        <exclude name="PSR12.Files.FileHeader"/>
+        <exclude name="PSR12.Files.OpenTag"/>
+        <exclude name="PSR1.Files.SideEffects"/>
+        <exclude name="PSR1.Classes.ClassDeclaration"/>
+        <exclude name="PSR12.Files.DeclareStatement"/>
+        <exclude name="Squiz.Functions.MultiLineFunctionDeclaration"/>
+    </rule>
+
+    <!-- Only check for critical issues to start -->
+    <rule ref="Generic.PHP.Syntax"/>
+    <rule ref="Generic.PHP.DeprecatedFunctions"/>
+    <rule ref="Generic.PHP.NoSilencedErrors"/>
+
+    <!-- Show progress and use colors -->
+    <arg value="sp"/>
+    <arg name="colors"/>
+</ruleset>
