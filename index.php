@@ -29,15 +29,13 @@
             </div>
 
             <div class='userinput'>
-                <input type='text' name='quantity' placeholder='# of ads'>
-                <input type='submit' name='submit'>
+                <input type='number' name='quantity' min='1' max='100' placeholder='# of ads' required>
+                <input type='submit' name='submit' value='Submit'>
             </div>
         </div>
     </div>
 
     <div class='output'>
-    <?php // include('craigslist.php'); ?>
-
         <table class='table'>
             <tr>
                 <th>Type</th>
@@ -47,15 +45,12 @@
                 <th>Carrier</th>
                 <th>Price</th>
             </tr>
-
         </table>
-
     </div>
     </form>
+
     <div class='footer'>
-    <?php
-    // include('../Frontend/footer.php');
-    ?>
+        <?php include_once('footer.php'); ?>
     </div>
 </body>
 </html>
