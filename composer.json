@@ -1,0 +1,28 @@
+{
+    "name": "coolrey3/craigslist-ads",
+    "description": "PHP web app for generating bulk Craigslist ad listings",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "autoload": {
+        "files": [
+            "src/AdGenerator.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": "phpcs",
+        "lint-fix": "phpcbf"
+    }
+}
