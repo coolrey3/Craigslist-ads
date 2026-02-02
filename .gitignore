@@ -16,6 +16,7 @@ Desktop.ini
 vendor/
 composer.lock
 *.phar
+.phpunit.cache/
 
 # Logs
 *.log

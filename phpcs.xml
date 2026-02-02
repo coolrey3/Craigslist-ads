@@ -3,11 +3,13 @@
     <description>PHP CodeSniffer configuration for Craigslist Ads</description>
 
     <!-- Scan these files -->
-    <file>.</file>
+    <file>src</file>
 
     <!-- Exclude vendor and generated files -->
     <exclude-pattern>vendor/*</exclude-pattern>
     <exclude-pattern>.git/*</exclude-pattern>
+    <exclude-pattern>tests/*</exclude-pattern>
+    <exclude-pattern>.phpunit.cache/*</exclude-pattern>
 
     <!-- Use PSR-12 as the base standard -->
     <rule ref="PSR12">

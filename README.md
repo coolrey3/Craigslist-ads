@@ -1,5 +1,7 @@
 # Craigslist Ads Bulk Creator
 
+[![CI](https://github.com/coolrey3/Craigslist-ads/actions/workflows/ci.yml/badge.svg)](https://github.com/coolrey3/Craigslist-ads/actions/workflows/ci.yml)
+
 A PHP web application for quickly generating bulk Craigslist ad listings for electronics and phone repair businesses. Enter product details in a form and get ready-to-post ad copy with consistent formatting.
 
 ## What It Does
@@ -10,22 +12,27 @@ A PHP web application for quickly generating bulk Craigslist ad listings for ele
 
 ## Tech Stack
 
-- PHP 7+
+- PHP 7.4+
 - HTML / CSS
-- No external dependencies
+- PHPUnit (testing)
+- PHP_CodeSniffer (linting)
 
 ## Setup
 
 ### Requirements
 
-- PHP 7.0 or higher
+- PHP 7.4 or higher
+- Composer
 
-### Running Locally
+### Installation
 
 ```bash
 # Clone the repository
 git clone https://github.com/coolrey3/Craigslist-ads.git
 cd Craigslist-ads
+
+# Install dev dependencies
+composer install
 
 # Start PHP's built-in development server
 php -S localhost:8000
@@ -38,6 +45,42 @@ php -S localhost:8000
 
 Place the project files in your web server's document root (e.g., `/var/www/html/Craigslist-ads/`) and access via your server's URL.
 
+## Development
+
+### Running Tests
+
+```bash
+# Run all tests
+composer test
+
+# Or directly
+vendor/bin/phpunit
+
+# With verbose output
+vendor/bin/phpunit --testdox
+```
+
+### Running Linter
+
+```bash
+# Check code style
+composer lint
+
+# Or directly
+vendor/bin/phpcs --standard=phpcs.xml
+
+# Auto-fix fixable issues
+composer lint-fix
+```
+
+### CI Pipeline
+
+The GitHub Actions CI workflow runs on every push/PR to `master`:
+
+- **Tests** — PHPUnit on PHP 8.1 and 8.2
+- **Lint** — PHP syntax check on PHP 8.1 and 8.2
+- **PHPCS** — Code style validation via PHP_CodeSniffer
+
 ## Project Structure
 
 ```
@@ -46,12 +89,18 @@ Craigslist-ads/
 ├── craigslist.php           # Dynamic form for entering product details
 ├── craigslistresults.php    # Generated ad copy output
 ├── craigslist.css           # Shared styles
+├── src/
+│   └── AdGenerator.php      # Testable ad generation logic (extracted)
+├── tests/
+│   └── AdGeneratorTest.php  # PHPUnit tests for ad generation
+├── composer.json            # Dependencies and scripts
+├── phpunit.xml              # PHPUnit configuration
+├── phpcs.xml                # PHP CodeSniffer configuration
 ├── images/                  # Image assets (store photos, etc.)
 ├── .editorconfig            # Editor formatting rules
-├── phpcs.xml                # PHP CodeSniffer configuration
 └── .github/
     └── workflows/
-        └── lint.yml         # CI workflow for PHP linting
+        └── ci.yml           # CI workflow (tests + linting)
 ```
 
 ## Usage
