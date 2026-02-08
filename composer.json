@@ -13,7 +13,8 @@
     },
     "autoload": {
         "files": [
-            "src/AdGenerator.php"
+            "src/AdGenerator.php",
+            "src/Utilities.php"
         ]
     },
     "autoload-dev": {
