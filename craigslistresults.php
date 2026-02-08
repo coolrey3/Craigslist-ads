@@ -41,16 +41,7 @@
 <body>
 
 <?php
-/**
- * Sanitize a string for safe HTML output.
- *
- * @param string $value Raw input string
- * @return string Escaped string safe for HTML
- */
-function sanitize($value)
-{
-    return htmlspecialchars(trim($value), ENT_QUOTES, 'UTF-8');
-}
+require_once __DIR__ . '/src/Utilities.php';
 
 // Validate that we have POST data
 if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST['quantity'])) {
